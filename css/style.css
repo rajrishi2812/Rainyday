@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  height: 100vh;
+  width: 100%;
+}
+header {
+  background-color:#44433F;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.logo {
+    width:80px;
+  margin-top: 4px;
+}
+  
+  
+
+
+  .nav-toggle {
+      display: none;
+  }
+
+  .nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height:100%;
+    display:flex;
+    align-items: center;
+    
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height:2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+
+    }
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after{
+        content:'' ;
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 7px;
+    }
+
+   nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color:#44433F;
+  width: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+  }
+
+  nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav a{
+    color: rgb(245, 240, 240);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+
+nav a:hover{
+    color:#EF5A1C;
+    text-decoration: underline;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1)
+    
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+
+}
+
+.welcome{
+    background-image: url(../images/walk.jpg);
+    min-height: 100vh;
+    background-position-y:center;
+}
+
+
+
+
+
+
+
+.container{
+    max-width:auto;
+    margin: auto;
+    padding-top: 250px;
+}
+
+.product-2{
+    display: flex;
+}
+
+.title{
+    flex: 1;
+    font-family:Tahoma, sans-serif;
+    font-weight: normal;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    color: rgb(212, 121, 111);
+}
+
+.title:hover {
+    text-decoration: underline;
+    color: rgb(77, 117, 156);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+select{
+    border: 2px solid rgb(119, 138, 107);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    }
+.img-1{
+    flex-basis: 30%;
+    margin-left:30px;
+    padding-left: 100px;
+    
+    }
+
+.rating{
+    color: yellowgreen;
+
+}
+
+.single-product{
+   padding-bottom: 50px; 
+}
+
+.single-product .img-1 img{
+padding: 0;
+}
+
+.single-product .img-1{
+    padding-right:100px;
+}
+
+.single-product h4{
+    margin: 10px 0;
+    font-size:20px;
+    font-weight: bold;
+
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+}
+.single-product input{
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid grey;
+}
+.single-product p{
+    margin-top: 5px;
+}
+
+
+
+
+   
+  
+
+input,textarea{
+    border:1px solid gray;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+}
+textarea{
+    height: 61%;
+    margin-left:10px;
+}
+
+.contact{
+    padding: 250px;
+    max-width:auto;
+    margin: 5px auto;
+    text-align: center;
+}
+.contact-1{
+    text-align: center;
+    margin-right:350px;
+    padding-bottom: 20px;
+}
+.form-wrapper{
+display: flex;
+text-align: left;
+
+}
+
+.form-wrapper > *{
+    float: 0.5em;;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cta{
+    background-color: red;
+    margin-right:100px;
+    width: 75px;
+    padding-left: px;
+    text-align: center;
+
+}
+
+
+.about{
+    padding: 200px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+h2{
+flex: 100%;
+}
+
+
+.about-image{
+    margin: 20px 0px;
+    width: max-content;
+}
+
+.btn{
+    border: 2px solid black;
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    color: rgb(180, 15, 166);
+    transition:ease-in-out .5s;
+}
+
+
+
+.footer-1{
+  background-color:#44433F;
+  width: 100%;
+  color: whitesmoke;
+  text-align: center;
+}
+.footer-1 h3{
+    color: rgb(22, 21, 21);
+    font-size: 20px;
+}
+.footer-1 h3:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+    transition: ease-in-out .5s;
+}
+.footer-row-1 li{
+    color: wheat;
+}
+.footer-row-1 li:hover{
+    text-decoration: underline;
+    color: rgb(189, 16, 16);
+    transition: ease-in-out .5s;
+    
+}
+
+.account{
+    padding: 50px 0;
+    }
+
+    .form-1{
+        width: 300px;
+        height: 400px;
+        position: relative;
+        text-align: center;
+        padding-top:100px;
+        margin:auto;
+        box-shadow: 0 0 20px 0px rgb(0,0,0,1) ;
+
+    }
+    
+    .form-1 span{
+     font-weight: bold;
+     padding:0 10px;
+     color: rgb(212, 121, 111);
+     cursor: pointer;
+     width: 100px;
+     display: inline-block;
+
+    }
+
+    .form-btn{
+        display: inline-block;
+ }
+ .form-1 form{
+     max-width: 300px;
+     padding:0 20px;
+     position: absolute;
+     top: 130px;
+     
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin:10px 0;
+    padding: 0 10px;
+    border: 1px solid grey;
+}
+
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#login form{
+    left:-300px;
+
+}
+#reg form{
+    left: 0;
+}
+form a{
+    font-size:12px;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+    display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    nav ul {
+        display: flex;
+        justify-content:  flex-end;
+    }
+
+    nav li {
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left:0 ;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+
+}
+
+nav a:hover::before{
+    transform: scale(1,1);
+
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
